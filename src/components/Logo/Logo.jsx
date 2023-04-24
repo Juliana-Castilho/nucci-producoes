@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import style from '../../styles/ComponentsStyle/Logo.module.css';
+import style from '../../styles/ComponentStyles/Logo.module.css';
 
 export default function Logo() {
   return (
