@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import style from '../../../styles/ComponentsStyle/SocialMedia.module.css';
+import style from '../../styles/ComponentsStyle/SocialMedia.module.css';
 
 export default function SocialMedia() {
   return (
