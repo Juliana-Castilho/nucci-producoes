@@ -1,5 +1,5 @@
 import Logo from '../Logo/Logo';
-import NavBarLabel from '../NavBarLabel/NavBarLabel';
+import Navbar from '../Navbar/Navbar';
 import SocialMedia from '../SocialMedia/SocialMedia';
 
 export default function Header() {
@@ -12,7 +12,7 @@ export default function Header() {
         <SocialMedia />
       </div>
       <div className="w-full absolute md:flex right-0 mt-4 mr-16 max-w-min items-center">
-        <NavBarLabel />
+        <Navbar />
       </div>
     </header>
   );
