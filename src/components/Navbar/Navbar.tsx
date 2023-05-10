@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import style from './Navbar.module.css';
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -8,10 +9,10 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="w-full fixed top-0 left-0 right-0 z-10">
+      <nav className="w-full fixed md:absolute top-0 left-0 right-0 z-10">
         <div className="justify-between px-4 lg:max-w-7x1 md:absolute md:right-0 md:items-center md:flex md:px-8">
           <div>
-            <div className="flex items-center justify-between md:py-5 md:block">
+            <div className="flex items-center justify-between md:block">
               {/* HAMBURGER BUTTON MOBILE */}
               <div className="md:hidden">
                 <button
@@ -39,7 +40,7 @@ export default function Navbar() {
             </div>
             <div>
               <div
-                className={`flex-1 mt-14 justify-self-center pb-3 pt-20 md:pt-0 md:block md:pb-0 md:mt-4 bg-black/80 md:bg-transparent rounded ${
+                className={`flex-1 mt-16 justify-self-center pb-3 pt-20 md:pt-0 md:block md:pb-0 md:mr-16 md:mt-0 bg-black/80 md:bg-transparent rounded ${
                   navbar ? 'p-12 md:p-0 block' : 'hidden'
                 }`}
               >
@@ -67,15 +68,17 @@ export default function Navbar() {
                     className="pb-6 text-orange-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:bg-primary border-primary md:hover:text-primary md:hover:bg-transparent"
                     onClick={() => setDropdown(!dropdown)}
                   >
-                    <Link href="#">Serviços</Link>
+                    <Link href="#">Serviços&nbsp;▾</Link>
                     <div
-                      className={`md:absolute w-full md:w-auto md:max-w-7x1 md:right-8 md:text-end ${
+                      className={`md:absolute w-full md:w-auto md:max-w-7x1 md:right-28 md:text-end ${
                         dropdown ? 'block' : 'hidden'
                       }`}
                     >
-                      <ul className="bg-gradient-to-b from-black/80 to-black/60 mt-3 md:rounded-md">
+                      <ul
+                        className={`bg-gradient-to-b from-black/30 to-black/10 md:from-black/40 md:to-black/80 mt-4 md:rounded-b-md ${style.dropdownBox}`}
+                      >
                         <li
-                          className="py-3 px-6 border-b-2 hover:bg-primary border-primary/50 md:hover:text-primary md:hover:bg-transparent"
+                          className="py-3 px-6 border-b-2 border-t-2 md:border-t-0 hover:bg-primary border-primary/50 md:hover:text-primary md:hover:bg-transparent"
                           onClick={() => setNavbar(!navbar)}
                         >
                           <Link href="/servicos/gravacao">Gravação</Link>

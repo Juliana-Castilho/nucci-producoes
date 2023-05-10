@@ -1,43 +1,46 @@
 .socialItem {
-    height: 30px;
-    width: 30px;;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #d98e11;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d98e11;
+  margin-top: 3px;
 }
 
 .sosialIcon {
-    --button-size: calc(var(--nav-size) * 0.5);
-    width: var(--button-size);
-    height: var(--button-size);
-    background-color: #484a4d;
-    border-radius: 50%;
-    padding: 2px;
-    margin: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    -ms-transition: all 0.8s;
-    transition: all 0.8s;
+  --button-size: calc(var(--nav-size) * 0.5);
+  width: var(--button-size);
+  height: var(--button-size);
+  background-color: #101426;
+  border: 1px solid #d9901132;
+  border-radius: 50%;
+  padding: 2px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .sosialIcon:hover {
-    filter: brightness(1.2);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -ms--transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    transition: all 0.2s;
+  filter: brightness(1.2);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+  border: 1px solid #d99011ab;
 }
 
 .icon-button svg {
-    fill: #f1dda7;
+  fill: #f1dda7;
 }
