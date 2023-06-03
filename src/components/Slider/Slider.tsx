@@ -1,8 +1,7 @@
-import Image from 'next/dist/client/image';
-import style from './Carousel.module.css';
+import style from './Slider.module.css';
 import { useEffect, useState, useRef } from 'react';
 
-export default function Carousel() {
+export default function Slider() {
   const [data, setData] = useState([]);
   const carousel = useRef(null);
 
