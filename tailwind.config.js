@@ -12,6 +12,13 @@ module.exports = {
       secondary: '#f1dda7',
       identity: '#212a4f',
     }),
+    extend: {
+      colors: {
+        primary: '#d98e11',
+        secondary: '#f1dda7',
+        identity: '#212a4f',
+      },
+    },
   },
   plugins: [],
 };

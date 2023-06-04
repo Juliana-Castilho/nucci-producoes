@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header>
       <div
-        className={`${style.headerbar} w-full h-16 bg-primary bg-gradient-to-b from-black/80 to-black/60 border-b-2 border-identity`}
+        className={`${style.headerbar} w-full h-16 bg-gradient-to-b from-black/80 to-black/60 border-b-2 border-identity`}
       >
         <div className="w-full max-w-min m-auto md:mx-16 flex items-center">
           <Logo />
