@@ -46,26 +46,26 @@ export default function Navbar() {
               >
                 <ul className="h-screen md:h-max items-baseline justify-center md:flex">
                   <li
-                    className="pb-6 text-orange-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:bg-primary border-primary md:hover:text-primary md:hover:bg-transparent"
+                    className="pb-6 text-orange-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-primary md:hover:text-primary md:hover:bg-transparent"
                     onClick={() => setNavbar(!navbar)}
                   >
                     <Link href="/">Home</Link>
                   </li>
                   <li
-                    className="pb-6 text-orange-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:bg-primary border-primary md:hover:text-primary md:hover:bg-transparent"
+                    className="pb-6 text-orange-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-primary md:hover:text-primary md:hover:bg-transparent"
                     onClick={() => setNavbar(!navbar)}
                   >
                     <Link href="/sobre">Sobre</Link>
                   </li>
                   <li
-                    className="pb-6 text-orange-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:bg-primary border-primary md:hover:text-primary md:hover:bg-transparent"
+                    className="pb-6 text-orange-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-primary md:hover:text-primary md:hover:bg-transparent"
                     onClick={() => setNavbar(!navbar)}
                   >
                     <Link href="/portfolio">Portfólio</Link>
                   </li>
                   {/* DROPDOWN */}
                   <li
-                    className="pb-6 text-orange-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:bg-primary border-primary md:hover:text-primary md:hover:bg-transparent"
+                    className="pb-6 text-orange-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-primary md:hover:text-primary md:hover:bg-transparent"
                     onClick={() => setDropdown(!dropdown)}
                   >
                     <Link href="#">Serviços&nbsp;▾</Link>
@@ -78,19 +78,19 @@ export default function Navbar() {
                         className={`bg-gradient-to-b from-black/30 to-black/10 md:from-black/40 md:to-black/80 mt-4 md:rounded-b-md ${style.dropdownBox}`}
                       >
                         <li
-                          className="py-3 px-6 border-b-2 border-t-2 md:border-t-0 hover:bg-primary border-primary/50 md:hover:text-primary md:hover:bg-transparent"
+                          className="py-3 px-6 border-b-2 border-t-2 md:border-t-0 border-primary/50 md:hover:text-primary md:hover:bg-transparent"
                           onClick={() => setNavbar(!navbar)}
                         >
                           <Link href="/servicos/gravacao">Gravação</Link>
                         </li>
                         <li
-                          className="py-3 px-6 border-b-2 hover:bg-primary border-primary/50 md:hover:text-primary md:hover:bg-transparent"
+                          className="py-3 px-6 border-b-2 border-primary/50 md:hover:text-primary md:hover:bg-transparent"
                           onClick={() => setNavbar(!navbar)}
                         >
                           <Link href="/servicos/mixagem">Mixagem</Link>
                         </li>
                         <li
-                          className="py-3 px-6 border-b-2 hover:bg-primary border-primary/50 md:hover:text-primary md:hover:bg-transparent"
+                          className="py-3 px-6 border-b-2 border-primary/50 md:hover:text-primary md:hover:bg-transparent"
                           onClick={() => setNavbar(!navbar)}
                         >
                           <Link href="/servicos/masterizacao">
@@ -98,7 +98,7 @@ export default function Navbar() {
                           </Link>
                         </li>
                         <li
-                          className="py-3 px-6 border-b-2 hover:bg-primary border-primary/50 md:hover:text-primary md:hover:bg-transparent"
+                          className="py-3 px-6 border-b-2 border-primary/50 md:hover:text-primary md:hover:bg-transparent"
                           onClick={() => setNavbar(!navbar)}
                         >
                           <Link href="/servicos/producao-musical">
