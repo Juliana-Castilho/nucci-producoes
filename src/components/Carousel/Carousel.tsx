@@ -8,7 +8,7 @@ export default function Carousel() {
 
   const carouselItem = [...CarouselItems];
 
-  function loop(count) {
+  function loop(count: number) {
     if (count == carouselItem.length) {
       return (count = 0);
     }
@@ -35,7 +35,7 @@ export default function Carousel() {
         >
           <img
             src="http://localhost:3000/carousel/images/prev-icon.svg"
-            alt="Scroll left"
+            alt="Scroll prev"
           />
         </button>
         <button
@@ -44,7 +44,7 @@ export default function Carousel() {
         >
           <img
             src="http://localhost:3000/carousel/images/next-icon.svg"
-            alt="Scroll right"
+            alt="Scroll next"
           />
         </button>
 
