@@ -1,4 +1,4 @@
-const CardList = [
+export const CardList = [
   {
     img: '/card/img_portfolio1.jpg',
     title: 'Gravação',

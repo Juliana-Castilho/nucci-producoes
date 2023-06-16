@@ -5,3 +5,5 @@ export * from './Navbar';
 export * from './SocialMedia';
 export * from './Slider';
 export * from './Carousel';
+export * from './Card';
+export * from './CardImage';
