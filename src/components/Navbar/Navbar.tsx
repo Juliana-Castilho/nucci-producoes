@@ -10,9 +10,9 @@ export default function Navbar() {
   return (
     <>
       <nav className="w-full fixed md:absolute top-0 left-0 right-0 z-10">
-        <div className="justify-between px-4 lg:max-w-7x1 md:absolute md:right-0 md:items-center md:flex md:px-8">
+        <div className="justify-between lg:max-w-7x1 md:absolute md:right-0 md:items-center md:flex md:px-8">
           <div>
-            <div className="flex items-center justify-between md:block">
+            <div className="flex items-center bg-dark_identity justify-between px-4 md:block">
               {/* HAMBURGER BUTTON MOBILE */}
               <div className="md:hidden">
                 <button
@@ -40,7 +40,7 @@ export default function Navbar() {
             </div>
             <div>
               <div
-                className={`flex-1 mt-16 justify-self-center pb-3 pt-20 md:pt-0 md:block md:pb-0 md:mr-16 md:mt-0 bg-black/80 md:bg-transparent rounded ${
+                className={`flex-1 mt-4 mx-2 justify-self-center pb-3 pt-32 md:pt-0 md:block md:pb-0 md:mr-16 md:mt-0 bg-black/80 md:bg-transparent rounded ${
                   navbar ? 'p-12 md:p-0 block' : 'hidden'
                 }`}
               >
