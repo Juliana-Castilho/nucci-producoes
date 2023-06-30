@@ -13,3 +13,5 @@ export const Button = ({ children, icon }: IButtonProps) => {
     </button>
   );
 };
+
+export default Button;
