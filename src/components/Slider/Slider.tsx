@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import style from './Slider.module.css';
 import { useEffect, useState, useRef } from 'react';
 
@@ -36,13 +37,13 @@ export default function Slider() {
       <div className={style.carousel} ref={carousel}>
         <div className={style.buttons}>
           <button onClick={handleLeftClick}>
-            <img
+            <Image
               src="http://localhost:3000/carousel/images/prev-icon.svg"
               alt="Scroll left"
             />
           </button>
           <button onClick={handleRightClick}>
-            <img
+            <Image
               src="http://localhost:3000/carousel/images/next-icon.svg"
               alt="Scroll right"
             />
@@ -57,7 +58,7 @@ export default function Slider() {
                   <span className={style.title}>{title}</span>
                   <span className={style.subtitle}>{subtitle}</span>
                 </div>
-                <img
+                <Image
                   src={image}
                   className={style.img}
                   alt={title}
