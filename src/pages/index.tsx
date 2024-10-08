@@ -18,7 +18,7 @@ export default function Home() {
               <div className="grid lg:grid-cols-3">
                 {CardList.map((card) => {
                   return (
-                    <Card className={`${styles['card-scale-bg']}`}>
+                    <Card key={card.title} className={`${styles['card-scale-bg']}`}>
                       <CardImage
                         src={card.img}
                         alt="Portfólio"
