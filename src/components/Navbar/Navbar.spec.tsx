@@ -32,7 +32,7 @@ describe('Testing Navbar', () => {
 
   it('should render Serviços menu', () => {
     render(<Navbar />);
-    expect(screen.getByText('Serviços ▾').closest('a')).toHaveAttribute(
+    expect(screen.getByText('Serviços▾').closest('a')).toHaveAttribute(
       'href',
       '/#'
     );
