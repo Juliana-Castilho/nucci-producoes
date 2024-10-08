@@ -1,7 +1,9 @@
-import Image from 'next/dist/client/image';
-import styles from './Carousel.module.css';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
+
 import { CarouselItems } from './CarouselItems';
+
+import styles from './Carousel.module.css';
 
 export default function Carousel() {
   const [index, setIndex] = useState(0);
@@ -33,18 +35,22 @@ export default function Carousel() {
           className={`${styles.prev} ${styles.button}`}
           onClick={() => setIndex((count) => loop(count - 1))}
         >
-          <img
-            src="http://localhost:3000/carousel/images/prev-icon.svg"
+          <Image
+            src="/carousel/images/prev-icon.svg"
             alt="Scroll prev"
+            height={25}
+            width={25}
           />
         </button>
         <button
           className={`${styles.next} ${styles.button}`}
           onClick={() => setIndex((count) => loop(count + 1))}
         >
-          <img
-            src="http://localhost:3000/carousel/images/next-icon.svg"
+          <Image
+            src="/carousel/images/next-icon.svg"
             alt="Scroll next"
+            height={25}
+            width={25}
           />
         </button>
 
